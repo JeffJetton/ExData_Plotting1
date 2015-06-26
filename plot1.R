@@ -26,7 +26,6 @@ names(data) <- read.table(filepath, colClasses="character",
 
 png("plot1.png")  # 480x480 is the default
 hist(data$Global_active_power, col="red",
-     bg="transparent",
      main="Global Active Power",
      xlab="Global Active Power (kilowatts)")
 dev.off()
