@@ -18,7 +18,7 @@ data <- read.table(filepath, sep=";", na.strings="?",
 names(data) <- read.table(filepath, colClasses="character",
                           sep=";", nrows=1)
                           
-# This plot will require parsing the data/time info
+# This plot will require parsing the date/time info
 data$dtm <- strptime(paste(data$Date, data$Time), format="%d/%m/%Y %H:%M:%S")
 
 
